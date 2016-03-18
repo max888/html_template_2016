@@ -1,0 +1,120 @@
+// main: ../styles/main.less
+
+// This stle sheet is for re-usable blocks of code
+
+// ------------------------------- hero's
+
+.hero {
+  position: relative;
+  .white;
+  background: url("../images/placeholders/dummy-480x270-Utrecht.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  div {
+    z-index: 4;
+  }
+  img {
+    max-width: 200px;
+    padding-bottom: 49px;
+  }
+  a {
+    .white;
+  }
+  min-height: 400px;
+  .fa-angle-down {
+    z-index: 5;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+// Place the hero-overlay empty div immediately avter optioning hero section for a full screen overlay
+.hero-overlay {
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+}
+
+// -----------------------Sliders
+
+.slider-next-arrow {
+  position: absolute;
+  top: 46%;
+  right: -15px;
+  cursor: pointer
+}
+
+.slider-prev-arrow {
+  position: absolute;
+  top: 46%;
+  left: -15px;
+  cursor: pointer;
+}
+
+ul.slick-dots {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+  li {
+    display: inline-block;
+    margin-right: 11px;
+    cursor: pointer;
+  }
+  li::before {
+  	content: '\f10c ';
+  	font-family: 'FontAwesome';
+  	width:10px;
+  	display: inline-block;
+  	padding-left:-10px;
+  }
+  button {
+    display: none;
+  }
+  li.slick-active {
+    .sand;
+  }
+}
+
+
+// ---------------------------- tiles for  pages
+
+
+.tile-item {
+  padding-bottom: 70px;
+  img {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tile-item {
+    // height: 592px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .tile-item {
+    // height: 544px;
+  }
+}

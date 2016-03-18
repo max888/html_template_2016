@@ -1,0 +1,419 @@
+// main: ../styles/main.less
+
+
+.row.contain-table {
+	margin-right: -30px;
+	margin-left: -30px;
+}
+
+
+//-----------------------------------------------[Generators]
+.size(@size: 16px, @height: 24px){
+	font-size: @size;
+	line-height: @height;
+}
+.bold{
+	font-weight:bold;
+}
+.normal{
+	font-weight:normal;
+}
+.italic{
+	font-style:italic;
+}
+.boldItalic{
+	font-weight:bold;
+	font-style:italic;
+}
+.caps{
+	text-transform:uppercase;
+}
+.clear{
+	clear:both;
+}
+.centered{
+	text-align: center;
+}
+//-----------------------------------------------[Colours]
+@red:#FF0000;
+.red{ color:@red; }
+.redBG{ background-color:@red; }
+
+@black:#000;
+.black{ color:@black; }
+.blackBG{ background-color:@black; }
+
+@white:#FFFFFF;
+.white{ color:@white; }
+.whiteBG{ background-color:@white; }
+
+@blue:#00b1c5;
+.blue{ color:@blue; }
+.blueBG{ background-color:@blue; }
+
+@sand:#CCB99E;
+.sand{ color:@sand; }
+.sandBG{ background-color:@sand; }
+
+@softBlack:#333333;
+.softBlack{ color:@softBlack; }
+.softBlackBG{ background-color:@softBlack; }
+
+
+
+//-----------------------------------------------[Fonts]
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+@font-face {
+	font-family:'HelveticaNeue-MediumItalic';
+	src: url('fonts/HelveticaNeue-MediumItalic_gdi.eot');
+	src: url('fonts/HelveticaNeue-MediumItalic_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/HelveticaNeue-MediumItalic_gdi.woff') format('woff'),
+		url('fonts/HelveticaNeue-MediumItalic_gdi.ttf') format('truetype'),
+		url('fonts/HelveticaNeue-MediumItalic_gdi.svg#HelveticaNeue-MediumItalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+0020-2212;
+}
+
+
+.hFont{
+		font-family: 'Montserrat', sans-serif;
+
+}
+.pFont{
+	font-family: 'Montserrat', sans-serif;
+}
+.monoFont{
+	font-family: 'courier';
+}
+
+.medium {
+	font-family:'courier', sans-serif;
+}
+
+.thin {
+	font-family:'courier', sans-serif;
+}
+
+pre,code,samp,var{
+	.monoFont;
+}
+var{
+	.bold;
+}
+//-----------------------------------------------[Headings]
+h1,h2,h3,h4,h5,h6{
+	.hFont;
+}
+h1{
+	.size(24px,30px);
+	margin:10px 0px;
+}
+h2{
+	.size(18px,22px);
+	margin:10px 0px;
+}
+
+h3{
+	.size(24px,24px);
+	margin:10px 0px;
+	.caps;
+}
+h4{
+	.size(24px,30px);
+	margin:10px 0px;
+}
+h5{
+	.size(22px,25px);
+	margin:10px 0px;
+}
+h6{
+	.size(20px,25px);
+	margin:10px 0px;
+}
+
+@media (min-width: 768px) {
+	h1{
+		.size(80px,88px);
+		margin:14px 0px;
+	}
+	h2{
+		.size(56px,66px);
+		margin:12px 0px;
+	}
+}
+
+
+
+
+//-----------------------------------------------[Paragraph]
+html,body,p{
+	.pFont;
+	.size(16px,24px);
+}
+p{
+	margin:10px 0px;
+}
+
+
+
+
+
+i,em{
+	.italic;
+}
+b i,
+strong i,
+i b,
+i strong,
+b em,
+strong em,
+em b,
+em strong{
+	.boldItalic;
+}
+//-----------------------------------------------[Blockquote]
+blockquote{
+	border-left: 5px solid grey;
+	padding:10px 20px;
+	margin:10px 0px;
+}
+//-----------------------------------------------[Inline]
+a{
+	text-decoration:underline;
+	.black;
+}
+a:hover{
+	text-decoration:none;
+	.black;
+}
+a:active{
+
+}
+sup{
+	position: relative;
+	top:-5px;
+	font-size: 0.7rem;
+}
+sub{
+	position: relative;
+	top:5px;
+	font-size: 0.7rem;
+}
+small{
+	font-size: 0.7rem;
+}
+mark{
+	background-color: #884444;
+	color:white;
+	padding:0px 5px;
+}
+//-----------------------------------------------[Horizontal Rule]
+// hr {
+//     background: black;
+//     border: 0 none;
+//     height: 1px;
+//     margin: 10px 0px;
+// }
+
+hr {
+	width: 20px;
+	margin: 20px 0px;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid @black;
+}
+//-----------------------------------------------[Lists - Unordered]
+
+
+ul{
+	margin:0px;
+	li{
+		list-style: none;
+		margin-left: 0px;
+		ul,ol{
+			margin:0px;
+		}
+	}
+}
+//-----------------------------------------------[Lists - Ordered]
+ol{
+	margin:0px 0px;
+	li{
+		list-style: none;
+		margin-left: 0px;
+		ul,ol{
+			margin:0px;
+		}
+	}
+}
+//-----------------------------------------------[Lists - Definition]
+dl{
+	dt{
+		.bold;
+		margin-top: 10px;
+	}
+	dd{
+		.italic;
+		margin-bottom: 10px;
+		margin-left: 20px;
+	}
+}
+//-----------------------------------------------[Images]
+img{
+	display:block;
+	max-width: 100%;
+	height: auto;
+}
+//-----------------------------------------------[Form Elements]
+
+input, textarea {
+	height: 46px;
+	width: 100%;
+	background-color: @white;
+	border: 2px solid @black;
+	padding: 0px 6px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 10px;
+  height: 10px;
+  border: 2px solid @black;
+}
+
+textarea {
+	height: 200px;
+	padding: 6px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	.caps;
+	.sandBG;
+	.softBlack;
+	border: 0px;
+}
+
+
+ input[type="submit"]:hover {
+     background-color: @softBlack;
+		 .white;
+ }
+
+ select {
+	 width: 100%;
+	 height: 46px;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: menulist-button;
+	.black;
+	.sandBG;
+	.caps;
+	border: none;
+	border-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+ }
+
+input {
+    // -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input[type="checkbox"] {
+	width: auto;
+  height: auto;
+  border: auto;
+}
+
+//-----------------------------------------------[Buttons]
+a.button{
+	text-decoration:none;
+	.sand;
+	.softBlackBG;
+  padding: 15px 15px;
+	min-width: 120px;
+	letter-spacing: 2px;
+	display: block;
+	text-align: center;
+	.caps;
+	&.sandBG {
+		.white;
+		.sandBG;
+		&:hover {
+			.softBlackBG;
+			.white;
+		}
+	}
+}
+
+
+
+
+a.button:hover{
+	text-decoration:none;
+	.sandBG;
+	.softBlack;
+}
+a.button:active{
+
+}
+
+
+a.button.large{
+	text-decoration:none;
+}
+a.button.large:hover{
+	text-decoration:underline;
+}
+a.button.large:active{
+
+}
+//-----------------------------------------------[Table]
+table{
+	border: 2px solid black;
+	width:100%;
+	thead{
+		tr{
+			.redBG;
+			th{
+				color:white;
+				font-weight: bold;
+				padding:5px 10px;
+				border:1px solid black;
+			}
+		}
+	}
+	tfoot{
+		tr{
+			.redBG;
+			th{
+				color:white;
+				font-weight: bold;
+				padding:5px 10px;
+				border:1px solid black;
+			}
+		}
+	}
+	tbody{
+		tr{
+			td{
+				color:black;
+				padding:5px 10px;
+				border:1px solid black;
+			}
+		}
+		tr:nth-child(odd){
+			background-color:#eee;
+		}
+		tr:nth-child(even){
+			background-color:#fff;
+		}
+	}
+}

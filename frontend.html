@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/vendor/jquery.mmenu.min.js"></script>
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="js/vendor/jquery.fullpage.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+
+    <body>
+
+      <header>
+
+
+      </header>
+
+
+      <div class="page-wrapper">   <!-- opening  of page wrapper. This is closed just before footer -->
+
+        <style media="screen">
+          section {
+            padding-bottom: 50px;
+          }
+        </style>
+
+        <!-- uncomment the JS for these to work -->
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>Frontend components</h1>
+                <h4><a href="#slider">Slider</a></h4>
+                <h4><a href="#lightbox">Lightbox</a></h4>
+                <h4><a href="#modal">modal</a></h4>
+                <h4><a href="#hero">hero</a></h4>
+                <h4><a href="#isotope">isotope</a></h4>
+                <h4><a href="#mobileheaderexample">mobile-menu</a></h4>
+                <h4>Video background</h4>
+              </div>
+          </div>
+        </section>
+
+        <section id="#slider">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Slider</h2>
+                <p>Documentation: <a href="http://kenwheeler.github.io/slick/">http://kenwheeler.github.io/slick/</a></p>
+                <div class="demo-slider">
+                  <div>
+                    <img src="http://baconmockup.com/1170/600" alt="" />
+                  </div>
+                  <div>
+                    <img src="http://baconmockup.com/1170/600" alt="" />
+                  </div>
+                  <div>
+                    <img src="http://baconmockup.com/1170/600" alt="" />
+                  </div>
+                </div>
+                <img src="images/slider-left.png" class="slider-prev-arrow" alt="slide left">
+                <img src="images/slider-right.png" class="slider-next-arrow" alt="slide right for next testimonial">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="#lightbox">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Lightbox</h2>
+                <p>Documentation: <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></p>
+              </div>
+
+              <div class="lightbox-wrap">
+                <div class="col-sm-4">
+                  <a href="http://baconmockup.com/600/200"><img src="http://baconmockup.com/600/200" alt=""></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="http://baconmockup.com/600/200"><img src="http://baconmockup.com/600/200" alt=""></a>
+                </div>
+                <div class="col-sm-4">
+                <a href="http://baconmockup.com/600/200"><img src="http://baconmockup.com/600/200" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="#modal">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Modal</h2>
+                <p>Documentation: <a href="http://getbootstrap.com/javascript/#modals">http://getbootstrap.com/javascript/#modals</a></p>
+                <!-- Button trigger modal -->
+                <button type="button" class="button" data-toggle="modal" data-target="#myModal">
+                  Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nihil nobis aspernatur praesentium consequuntur eos amet rem similique et dolore quae itaque iure voluptas laboriosam nisi ipsa molestiae, explicabo accusantium?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section  id="#hero" class="hero fullScreenHeight flex-column-center">
+          <div class="hero-overlay"></div>
+          <div class="text-center">
+            <h2>This is a full screen hero</h2>
+            <a href="#" data-toggle="modal" data-target="#homeVideoModal">Watch Full Video</a>
+          </div>
+          <a href ="#" id="toSection"><i class="fa fa-angle-down fa-4x"></i></a>
+
+          <!-- Modal -->
+          <div id="homeVideoModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class='embed-container'>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8kl6q_9qZOs" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section id="#isotope">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Isotope</h2>
+                <p>Documentation: <a href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a> <a href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <style>
+                .demo-isotope-wrapper img {
+                  width: 100%;
+                  margin-bottom: 30px;
+                }
+
+              </style>
+              <div class="demo-isotope-wrapper">
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-480x270-Utrecht.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-200x200-Floral.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-315x560-Comb.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-375x500-FairyLights.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-454x280-Menu.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-480x270-Utrecht.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-454x280-Menu.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-540x960-Map.jpg" alt=""  />
+                </div>
+                <div class="col-sm-4">
+                  <img src="images/placeholders/dummy-576x1024-Rope.jpg" alt=""  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="#mobileheaderexample">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Mobile menu</h2>
+                <p>Resize the browser to see mobile menu</p>
+                <p>Documentation: <a href="http://mmenu.frebsite.nl/examples.html">http://mmenu.frebsite.nl/examples.html</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div> <!-- end of page-wrapper div -->
+
+        <footer>
+
+        </footer>
+
+
+
+    </body>
+    </html>

@@ -1,0 +1,122 @@
+// main: ../styles/main.less
+
+// .useful classes
+
+.background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// ------ Useful classes
+.center-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.relative {
+	position: relative
+}
+
+@media (min-width: 768px) {
+	.fullScreenHeight {
+		height: 100vh;
+	}
+}
+
+@media (min-width: 768px) {
+	.halfScreenHeight {
+		height: 50vh;
+	}
+}
+
+
+// -------------------------- padding removal for bootstrap classes and table classes for equal height 2 panel partials
+@media (min-width: 768px) {
+	.no-padding {
+		padding: 0px;
+	}
+	.table-cell {
+		display: table-cell;
+		float: none;
+	}
+	.display-table {
+		display: table;
+	}
+	.top40 {
+		padding-top: 40px;
+	}
+	.bottom40 {
+		padding-bottom: 40px;
+	}
+}
+
+// -----------flex box
+
+.flex-column-center {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// ------------------------header
+// header {
+//   display: none;
+//   position: fixed;
+//   height: 100px;
+//   width: 100%;
+//   padding: 20px 22px;
+//   z-index: 5;
+//   img {
+//     display: inline-block;
+//   }
+//   nav {
+//     display: inline-block;
+//     float: right;
+//         padding-top: 13px;
+//     ul {
+//       li {
+//         display: inline-block;
+//         margin-left: 20px;
+//         a {
+//           .white;
+//           font-size: 17px;
+//           text-decoration: none;
+//           &:hover {
+//             .white;
+//             text-decoration: underline;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+#mobile-header {
+  height: 44px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+  .burger {
+    padding-top: 12px;
+  }
+}
+
+
+
+// hide menu on page load
+#mobile-menu:not( .mm-menu ) {
+   display: none;
+}
